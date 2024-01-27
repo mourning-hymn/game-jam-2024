@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 77919318}
   - component: {fileID: 77919317}
   - component: {fileID: 77919319}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: rightarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 152030659}
   - component: {fileID: 152030658}
   - component: {fileID: 152030660}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: rightleg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 755554238}
   - component: {fileID: 755554237}
   - component: {fileID: 755554239}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -561,9 +561,9 @@ GameObject:
   m_Component:
   - component: {fileID: 859319550}
   - component: {fileID: 859319552}
-  - component: {fileID: 859319551}
   - component: {fileID: 859319553}
-  m_Layer: 0
+  - component: {fileID: 859319551}
+  m_Layer: 6
   m_Name: playersprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -579,7 +579,7 @@ Transform:
   m_GameObject: {fileID: 859319549}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.79, y: -5.7, z: -0.112960264}
+  m_LocalPosition: {x: -2.82, y: -5.45, z: -0.112960264}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -632,10 +632,10 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Interpolate: 1
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!61 &859319553
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -692,7 +692,7 @@ GameObject:
   - component: {fileID: 977189509}
   - component: {fileID: 977189508}
   - component: {fileID: 977189510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -804,7 +804,7 @@ GameObject:
   - component: {fileID: 1302861620}
   - component: {fileID: 1302861619}
   - component: {fileID: 1302861621}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: leftarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1044,7 +1044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1878450075}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1077,7 +1077,7 @@ GameObject:
   - component: {fileID: 1908196261}
   - component: {fileID: 1908196260}
   - component: {fileID: 1908196262}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: leftleg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
