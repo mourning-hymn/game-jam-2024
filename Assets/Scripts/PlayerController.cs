@@ -8,22 +8,35 @@ public class PlayerController : MonoBehaviour
     private float speed = 8f;
     private bool isFacingRight = true;
 
+    private Animator anim;
+    public bool isRunning = false;
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
     // private SpriteRenderer sprite;
 
-    // void Start() {
-    //     sprite = GetComponent<SpriteRenderer>();
-    // }
+    void Start() {
+        // sprite = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-        
+
         Flip();
+
+        if(horizontal == 0f)
+        {
+            anim.SetBool("isRunning", false);
+        }
+        else
+        {
+            anim.SetBool("isRunning", true);
+        }
     }
 
     private void FixedUpdate() {
