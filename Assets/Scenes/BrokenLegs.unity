@@ -791,6 +791,7 @@ Transform:
   - {fileID: 942864301}
   - {fileID: 347029767}
   - {fileID: 371926559}
+  - {fileID: 581858568}
   - {fileID: 350671957}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2281,6 +2282,7 @@ GameObject:
   - component: {fileID: 581858567}
   - component: {fileID: 581858566}
   - component: {fileID: 581858565}
+  - component: {fileID: 581858569}
   m_Layer: 13
   m_Name: hammer
   m_TagString: Weapon
@@ -2438,13 +2440,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581858564}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.9739842, y: 2.7268624, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.8360157, y: 5.8068624, z: -0.046711892}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 270464130}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &581858569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581858564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd0a0040969b95849b0e22c5d01512fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 859319551}
 --- !u!1 &725789245
 GameObject:
   m_ObjectHideFlags: 0
@@ -5744,4 +5759,3 @@ SceneRoots:
   - {fileID: 544160088}
   - {fileID: 546068501}
   - {fileID: 1268391355}
-  - {fileID: 581858568}

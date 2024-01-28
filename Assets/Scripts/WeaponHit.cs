@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponHit : MonoBehaviour
 {
-    public health playerHealth;
+    public PlayerHealth playerHealth;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
