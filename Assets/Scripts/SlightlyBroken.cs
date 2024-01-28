@@ -8,14 +8,20 @@ public class SlightlyBroken : MonoBehaviour
     // public Sprite newSprite;
     public HingeJoint2D rightLeg;
     public HingeJoint2D leftLeg;
+    public HingeJoint2D leftArm;
+    public HingeJoint2D rightArm;
     private JointMotor2D rightLegMotorRef;
     private JointMotor2D leftLegMotorRef;
+    private JointMotor2D leftArmMotorRef;
+    private JointMotor2D rightArmMotorRef;
     public float hingespeed = 40;
     // Start is called before the first frame update
     void Start()
     {
         rightLegMotorRef = rightLeg.motor;
         leftLegMotorRef = leftLeg.motor;
+        leftArmMotorRef = leftArm.motor;
+        rightArmMotorRef = rightArm.motor;
 
         // gameObject.GetComponent<SpriteRenderer>().enabled = true;
     }
@@ -47,15 +53,38 @@ public class SlightlyBroken : MonoBehaviour
             leftLeg.useMotor = false;
             rightLeg.useMotor= false;
         }
-       /* else
+        if (Input.GetKey(KeyCode.Q))
         {
-            rightLeg.useMotor = false;
+            leftArm.useMotor = true;
+            rightArm.useMotor = true;
+            leftArmMotorRef.motorSpeed = -hingespeed;
+            rightArmMotorRef.motorSpeed = hingespeed;
+            leftArm.motor = leftArmMotorRef;
+            rightArm.motor = rightArmMotorRef;
         }
-
-        if (Input.GetKeyDown(KeyCode.G))
+        else if (Input.GetKey(KeyCode.E))
         {
-            hingespeed = hingespeed * -1;
-        }*/
+            rightArm.useMotor = true;
+            leftArm.useMotor = true;
+            leftArmMotorRef.motorSpeed = hingespeed;
+            leftArm.motor = leftArmMotorRef;
+            rightArmMotorRef.motorSpeed = -hingespeed;
+            rightArm.motor = rightArmMotorRef;
+        }
+        else
+        {
+            leftArm.useMotor = false;
+            rightArm.useMotor = false;
+        }
+        /* else
+         {
+             rightLeg.useMotor = false;
+         }
+
+         if (Input.GetKeyDown(KeyCode.G))
+         {
+             hingespeed = hingespeed * -1;
+         }*/
     }
 
     // private void OnTriggerEnter2D(Collider2D other) 
