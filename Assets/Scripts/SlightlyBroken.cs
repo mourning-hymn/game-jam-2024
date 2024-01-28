@@ -31,7 +31,7 @@ public class SlightlyBroken : MonoBehaviour
             rightLegMotorRef.motorSpeed = -hingespeed;
             rightLeg.motor = rightLegMotorRef;
         }
-        else if(Input.GetKey(KeyCode.G))
+        else if(Input.GetKeyDown(KeyCode.G))
         {
             hingespeed = hingespeed * -1;
         }
