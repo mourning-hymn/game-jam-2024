@@ -9,7 +9,7 @@ public class WeaponHit : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            playerHealth.takeDamage(1);
+            playerHealth.TakeDamage(1);
         }
     }
 }

@@ -17,7 +17,7 @@ public class health : MonoBehaviour
     {
         currentHealth = maxHealth;
     }
-    void TakeDamage(int amount)
+    public void TakeDamage(int amount)
     {
         //play sound here perhaps
         currentHealth -= amount;
