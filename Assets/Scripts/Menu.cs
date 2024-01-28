@@ -10,7 +10,7 @@ public class Menu : MonoBehaviour
     public void OnPlayButton()
     {
         Cursor.visible = false;
-        SceneManager.LoadScene("Primary");
+        SceneManager.LoadScene("temp_main");
     }
 
     public void OnQuitButton()
