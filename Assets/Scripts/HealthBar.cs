@@ -43,6 +43,7 @@ public class HealthBar : MonoBehaviour
         }
 
         slider.value = fillValue;
+        playerHealth.hasCollide = false;
     }
 
 }
