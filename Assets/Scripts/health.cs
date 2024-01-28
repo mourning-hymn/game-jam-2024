@@ -5,8 +5,9 @@ using UnityEngine;
 public class health : MonoBehaviour
 {
 
-    public int maxHealth = 3;
+    public int maxHealth = 5;
     public int currentHealth;
+    
 
     private bool isHit = false;
 
@@ -15,11 +16,5 @@ public class health : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
