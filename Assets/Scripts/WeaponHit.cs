@@ -5,16 +5,26 @@ using UnityEngine;
 public class WeaponHit : MonoBehaviour
 {
     public PlayerHealth playerHealth;
-    bool canHit = true;
+    public EnemyHealth enemyHealth;
+    //bool canHit = true;
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
         if (collision.gameObject.tag == "Player")
         {
-            if (playerHealth.hasCollide==false) {
+            if (playerHealth.hasCollideP==false) {
                 //Debug.Log("got hit");
-                playerHealth.hasCollide = true;
+                playerHealth.hasCollideP = true;
                 playerHealth.TakeDamage(1);
+            }
+        }
+        if(collision.gameObject.tag == "enemy") 
+        {
+            if (enemyHealth.hasCollideE == false)
+            {
+                //Debug.Log("got hit");
+                enemyHealth.hasCollideE = true;
+                enemyHealth.TakeDamage(1);
             }
         }
     }

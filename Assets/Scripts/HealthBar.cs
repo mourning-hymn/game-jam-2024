@@ -9,6 +9,7 @@ public class HealthBar : MonoBehaviour
 {
 
     public PlayerHealth playerHealth;
+    public EnemyHealth enemyHealth;
     public Image fillImage;
     private Slider slider;
 
@@ -30,7 +31,7 @@ public class HealthBar : MonoBehaviour
             fillImage.enabled = true;
         }
 
-        float fillValue = playerHealth.currentHealth / playerHealth.maxHealth;
+        float fillValue = playerHealth.currentHealthP / playerHealth.maxHealthP;
 
         if(fillValue <= slider.minValue/3)
         {
@@ -42,7 +43,9 @@ public class HealthBar : MonoBehaviour
         }
 
         slider.value = fillValue;
-        playerHealth.hasCollide = false;
+        playerHealth.hasCollideP = false;
+        enemyHealth.hasCollideE = false;
+
     }
 
 }
