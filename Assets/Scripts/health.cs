@@ -9,7 +9,7 @@ public class health : MonoBehaviour
     public int currentHealth;
     
 
-    private bool isHit = false;
+    //private bool isHit = false;
 
 
     // Start is called before the first frame update
@@ -23,7 +23,7 @@ public class health : MonoBehaviour
         currentHealth -= amount;
         if (currentHealth < 0)
         {
-
+            //game over screen
         }
     }
 }
