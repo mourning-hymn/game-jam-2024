@@ -27,25 +27,35 @@ public class SlightlyBroken : MonoBehaviour
         if(Input.GetKey(KeyCode.A))
         {
             leftLeg.useMotor = true;
-            leftLegMotorRef.motorSpeed = hingespeed;
+            rightLeg.useMotor = true;
+            leftLegMotorRef.motorSpeed = -hingespeed;
+            rightLegMotorRef.motorSpeed = hingespeed;
             leftLeg.motor = leftLegMotorRef;
+            rightLeg.motor = rightLegMotorRef;
         }
-        else if(Input.GetKey(KeyCode.D)) 
+        else if (Input.GetKey(KeyCode.D))
         {
             rightLeg.useMotor = true;
+            leftLeg.useMotor = true;
+            leftLegMotorRef.motorSpeed = hingespeed;
+            leftLeg.motor = leftLegMotorRef;
             rightLegMotorRef.motorSpeed = -hingespeed;
             rightLeg.motor = rightLegMotorRef;
         }
-        else  
+        else
         {
             leftLeg.useMotor = false;
+            rightLeg.useMotor= false;
+        }
+       /* else
+        {
             rightLeg.useMotor = false;
         }
 
-        if(Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.G))
         {
             hingespeed = hingespeed * -1;
-        }
+        }*/
     }
 
     // private void OnTriggerEnter2D(Collider2D other) 
