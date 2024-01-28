@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BrokenLegs.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: b9b3e410c3e43674fa7111dc0069861b
+  - enabled: 1
+    path: Assets/Scenes/temp_main.unity
+    guid: 47b80c9f62c70f24fa67336e9cd3c70e
+  - enabled: 1
+    path: Assets/Scenes/Controls.unity
+    guid: 662be26d7d31bcf499c54c18e7b3a8d2
   m_configObjects: {}

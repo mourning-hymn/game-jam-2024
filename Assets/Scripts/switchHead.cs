@@ -18,7 +18,7 @@ public class switchHead : MonoBehaviour
         dented_head.SetActive(false);
 
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        Debug.Log(spriteRenderer);
+        // Debug.Log(spriteRenderer);
     }
 
     // Update is called once per frame
