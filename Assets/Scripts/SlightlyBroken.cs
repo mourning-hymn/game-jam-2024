@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SlightlyBroken : MonoBehaviour
 {
+    // public SpriteRenderer spriteRenderer;
+    // public Sprite newSprite;
     public HingeJoint2D rightLeg;
     public HingeJoint2D leftLeg;
     private JointMotor2D rightLegMotorRef;
@@ -14,11 +16,14 @@ public class SlightlyBroken : MonoBehaviour
     {
         rightLegMotorRef = rightLeg.motor;
         leftLegMotorRef = leftLeg.motor;
+
+        // gameObject.GetComponent<SpriteRenderer>().enabled = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if(Input.GetKey(KeyCode.A))
         {
             leftLeg.useMotor = true;
@@ -31,14 +36,25 @@ public class SlightlyBroken : MonoBehaviour
             rightLegMotorRef.motorSpeed = -hingespeed;
             rightLeg.motor = rightLegMotorRef;
         }
-        else if(Input.GetKeyDown(KeyCode.G))
-        {
-            hingespeed = hingespeed * -1;
-        }
         else  
         {
             leftLeg.useMotor = false;
             rightLeg.useMotor = false;
         }
+
+        if(Input.GetKeyDown(KeyCode.G))
+        {
+            hingespeed = hingespeed * -1;
+        }
     }
+
+    // private void OnTriggerEnter2D(Collider2D other) 
+    // {
+
+    //     if(other.gameObject.name == "rock"){
+    //         spriteRenderer.sprite = newSprite;
+    //     }
+        
+    // }
+
 }
