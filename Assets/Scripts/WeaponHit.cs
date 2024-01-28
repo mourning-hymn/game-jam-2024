@@ -10,7 +10,7 @@ public class WeaponHit : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && gameObject.tag!="PlayerWeapon")
         {
             if (playerHealth.hasCollideP==false) {
                 //Debug.Log("got hit");
