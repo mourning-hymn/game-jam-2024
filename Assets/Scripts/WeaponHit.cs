@@ -18,7 +18,7 @@ public class WeaponHit : MonoBehaviour
                 playerHealth.TakeDamage(1);
             }
         }
-        if(collision.gameObject.tag == "enemy") 
+        if(collision.gameObject.tag == "enemy" && gameObject.tag!="Hammer") 
         {
             if (enemyHealth.hasCollideE == false)
             {

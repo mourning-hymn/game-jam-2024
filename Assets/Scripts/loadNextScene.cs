@@ -22,5 +22,10 @@ public class loadNextScene : MonoBehaviour
             Time.timeScale = 1f;
             SceneManager.LoadScene("BrokenLegs");
         }
+        else if(other.gameObject.name == "Door 2")
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene("GameOver");
+        }
     }
 }
