@@ -2371,6 +2371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 783420596}
   - component: {fileID: 783420597}
+  - component: {fileID: 783420598}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -2446,10 +2447,24 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &783420598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783420595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3701f7ae39219b64fb7ed201b85b619e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 859319551}
+  fillImage: {fileID: 1855112954}
 --- !u!1 &846627564
 GameObject:
   m_ObjectHideFlags: 0
@@ -2561,6 +2576,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 859319550}
+  - component: {fileID: 859319551}
   m_Layer: 6
   m_Name: playersprite_normal
   m_TagString: Untagged
@@ -2591,6 +2607,20 @@ Transform:
   - {fileID: 1878450075}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &859319551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859319549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caed07bf85f18c54ba2bacace0f7b2b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  currentHealth: 0
 --- !u!1 &888319752
 GameObject:
   m_ObjectHideFlags: 0
@@ -4033,8 +4063,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 74.98186, y: 0}
-  m_SizeDelta: {x: 159.9657, y: 0}
+  m_AnchoredPosition: {x: -1.4999924, y: 0}
+  m_SizeDelta: {x: 2.9999847, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1855112954
 MonoBehaviour:
